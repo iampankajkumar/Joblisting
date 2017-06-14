@@ -1,0 +1,15 @@
+<form ><div>
+    <input class="formInput" onsubmit="fun()" name="First Name" pattern="^[A-Za-z_-][A-Za-z0-9_-]*$" type="text"  id="frmFirst" min="2" maxlength="30"  required="required"/>
+    <span>First Name</span>
+</div>
+</form>
+
+<script type="text/javascript">
+function fun()
+{
+	var reg = /pattern/;
+if (reg.test($(this).val())) {
+    alert("hello");
+}
+}
+</script>
